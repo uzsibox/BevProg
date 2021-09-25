@@ -18,21 +18,22 @@ int main()
 	}
 	if (friend_sex == 'f') {
 		cout << "If you see " << friend_name << " please ask her to call me.\n";
-	
+
 	}
-	cout << "Enter the age of the recipient(followed by 'enter'):\n"; 
+	cout << "Enter the age of the recipient(followed by 'enter'):\n";
 	int age = 0;
 	cin >> age;
 	cout << "I hear you just had a birthday and you are " << age << " years old.\n";
-	if (age <= 0 || age >= 110) { simple_error("you're kidding!");
+	if (age <= 0 || age >= 110) {
+		simple_error("you're kidding!");
 	}
-    elseif (age < 12) {
+	elseif(age < 12) {
 		cout << "Next year you will be " << age + 1 << " . \n";
 	}
-    elseif (age == 17) {
+	elseif(age == 17) {
 		cout << "Next year you will be able to vote. \n";
 	}
-    elseif (age > 70) {
+	elseif(age > 70) {
 		cout << "I hope you are enjoying retirement. \n";
 	}
 	cout << "Yours sincerely \n\n Attila Balogh";
