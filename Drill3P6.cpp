@@ -10,19 +10,19 @@ int main()
     double x = 0;
    
 
-    while (cin >> x){
+    while (cin >> x) {
         if (largestSoFar < x) {
             largestSoFar = x;
-            cout << " The largest so far is " << x << "\n";                 
+            cout << " The largest so far is " << x << "\n";
         }
-        
+
         if (smallestSoFar > x) {
             smallestSoFar = x;
             cout << " The smallest so far is " << x << "\n";                                    //Csak az utolsó beütést tárolja
         }
-        
-     if (x == '|')
-           break;
+
+        if (x == '|')
+            break;
     }
     return 0;
 }
