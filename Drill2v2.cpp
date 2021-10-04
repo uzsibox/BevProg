@@ -27,13 +27,13 @@ int main()
 	if (age <= 0 || age >= 110) {
 		simple_error("you're kidding!");
 	}
-	elseif(age < 12) {
+	else if(age < 12) {
 		cout << "Next year you will be " << age + 1 << " . \n";
 	}
-	elseif(age == 17) {
+	else if(age == 17) {
 		cout << "Next year you will be able to vote. \n";
 	}
-	elseif(age > 70) {
+	else if(age > 70) {
 		cout << "I hope you are enjoying retirement. \n";
 	}
 	cout << "Yours sincerely \n\n Attila Balogh";
